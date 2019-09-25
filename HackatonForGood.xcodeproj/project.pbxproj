@@ -17,6 +17,8 @@
 		8A45E5B8233B53C900EE191F /* HackatonForGoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45E5B7233B53C900EE191F /* HackatonForGoodTests.swift */; };
 		8A45E5C4233B811800EE191F /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45E5C3233B811800EE191F /* EventViewController.swift */; };
 		8A45E5C6233B86A500EE191F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45E5C5233B86A500EE191F /* MapViewController.swift */; };
+		8A45E5CA233B92A500EE191F /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45E5C8233B92A500EE191F /* FeedTableViewCell.swift */; };
+		8A45E5CB233B92A500EE191F /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A45E5C9233B92A500EE191F /* FeedTableViewCell.xib */; };
 		D509DF3FA7629074EE557456 /* Pods_HackatonForGood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8588A719AE0280F306FB18 /* Pods_HackatonForGood.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		8A45E5B9233B53C900EE191F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A45E5C3233B811800EE191F /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		8A45E5C5233B86A500EE191F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8A45E5C8233B92A500EE191F /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		8A45E5C9233B92A500EE191F /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		A1A60C58211FF84B86056C31 /* Pods-HackatonForGood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonForGood.debug.xcconfig"; path = "Target Support Files/Pods-HackatonForGood/Pods-HackatonForGood.debug.xcconfig"; sourceTree = "<group>"; };
 		EC8588A719AE0280F306FB18 /* Pods_HackatonForGood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackatonForGood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +102,7 @@
 				8A45E5A0233B53C700EE191F /* AppDelegate.swift */,
 				8A45E5A2233B53C700EE191F /* SceneDelegate.swift */,
 				8A45E5C2233B80E800EE191F /* ViewControllers */,
+				8A45E5C7233B924E00EE191F /* Cells */,
 				8A45E5A6233B53C700EE191F /* Main.storyboard */,
 				8A45E5A9233B53C900EE191F /* Assets.xcassets */,
 				8A45E5AB233B53C900EE191F /* LaunchScreen.storyboard */,
@@ -123,6 +128,15 @@
 				8A45E5C5233B86A500EE191F /* MapViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8A45E5C7233B924E00EE191F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8A45E5C8233B92A500EE191F /* FeedTableViewCell.swift */,
+				8A45E5C9233B92A500EE191F /* FeedTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		AE1033DE455ACC486051EAD7 /* Frameworks */ = {
@@ -229,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A45E5AD233B53C900EE191F /* LaunchScreen.storyboard in Resources */,
+				8A45E5CB233B92A500EE191F /* FeedTableViewCell.xib in Resources */,
 				8A45E5AA233B53C900EE191F /* Assets.xcassets in Resources */,
 				8A45E5A8233B53C700EE191F /* Main.storyboard in Resources */,
 			);
@@ -296,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A45E5A5233B53C700EE191F /* LoginViewController.swift in Sources */,
+				8A45E5CA233B92A500EE191F /* FeedTableViewCell.swift in Sources */,
 				8A45E5C4233B811800EE191F /* EventViewController.swift in Sources */,
 				8A45E5A1233B53C700EE191F /* AppDelegate.swift in Sources */,
 				8A45E5C6233B86A500EE191F /* MapViewController.swift in Sources */,
