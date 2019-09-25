@@ -13,6 +13,8 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var tableView: UITableView!
     
+    var event: Event = Event()
+    
     enum JSONError: String, Error {
         case NoData = "ERROR: no data"
         case ConversionFailed = "ERROR: conversion from JSON failed"
@@ -24,10 +26,16 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.dataSource = self
         let feedTableViewCell = UINib(nibName: "FeedTableViewCell", bundle: nil)
         tableView.register(feedTableViewCell, forCellReuseIdentifier: "FeedTableViewCell")
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        reloadData()
+    }
+    
+    private func reloadData() {
         let parameterDictionary: [String : Any] = [
-            "title" : "Test",
-            "description" : "123456",
+            "title" : "This is title",
+            "description" : "This is description",
             "going": true
         ]
         
@@ -36,9 +44,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         urlRequest.httpMethod = "POST"
         
         urlRequest.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameterDictionary, options: []) else {
-            return
-        }
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameterDictionary, options: []) else { return }
         urlRequest.httpBody = httpBody
         
         
@@ -52,9 +58,14 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary else {
                     throw JSONError.ConversionFailed
                 }
-                print(json)
+            print(json)
+            self.event.title = json["title"] as? String ?? "Title"
+            self.event.description = json["description"] as? String ?? "Description"
+            print(self.event.title)
             
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
             
             } catch let error as JSONError {
                 print(error.rawValue)
@@ -64,9 +75,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
 
         task.resume()
-        
     }
-    
     
     // TableView
     
@@ -77,9 +86,10 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as! FeedTableViewCell
-        
-        
-        
+        cell.title.text = self.event.title
+        cell.descriptionLabel.text = self.event.description
+        cell.joinButton.backgroundColor = self.event.going ? UIColor.black : UIColor.red
+                
         return cell
     }
     

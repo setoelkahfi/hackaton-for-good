@@ -318,9 +318,6 @@
                         <viewLayoutGuide key="safeArea" id="zMZ-Nx-dK5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tab-flag" id="DeD-Au-tXs"/>
-                    <connections>
-                        <outlet property="tableView" destination="mxS-WI-pKL" id="BiQ-rN-Wxs"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zuv-WM-Mif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -401,9 +398,6 @@
                         <viewLayoutGuide key="safeArea" id="Sz9-mH-1lX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tab-circle" id="hQ3-Y9-2WS"/>
-                    <connections>
-                        <outlet property="tableView" destination="pst-MO-g3M" id="VKg-MP-hWh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqE-gE-TTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -484,9 +478,6 @@
                         <viewLayoutGuide key="safeArea" id="u0p-gc-ywL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tab-user" id="wfc-fS-4Jh"/>
-                    <connections>
-                        <outlet property="tableView" destination="ETJ-CX-8Cj" id="RJf-7w-auE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="52R-3G-Lel" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -567,9 +558,6 @@
                         <viewLayoutGuide key="safeArea" id="zN7-rD-HCp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tab-eye" id="lup-7d-SVR"/>
-                    <connections>
-                        <outlet property="tableView" destination="UTM-rO-BrI" id="pxa-j6-hib"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azN-MZ-i5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
