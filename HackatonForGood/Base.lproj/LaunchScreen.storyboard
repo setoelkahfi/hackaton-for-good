@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,63 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PokemonCleanup" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guV-7r-ZIT" userLabel="Title Label">
+                                <rect key="frame" x="114.66666666666669" y="82" width="185" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="YbI-aQ-to8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep your community clean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUY-93-ocr" userLabel="Subtitle Label">
+                                <rect key="frame" x="101" y="248" width="212" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ge2-Cl-YK2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.70196078431372544" green="0.63137254901960782" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="GwP-ig-dMg" userLabel="Earth">
+                                <rect key="frame" x="184" y="491" width="491" height="491"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="490.99999999999989" id="hHw-Rd-xLZ"/>
+                                    <constraint firstAttribute="height" constant="490.99999999999989" id="v9P-fF-2tT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="4Gl-hj-gQ2" userLabel="Pikachu">
+                                <rect key="frame" x="174" y="436" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="TNV-x4-WDT"/>
+                                    <constraint firstAttribute="height" constant="256" id="dMa-2s-Pk9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eUY-93-ocr" firstAttribute="top" secondItem="guV-7r-ZIT" secondAttribute="bottom" constant="66" id="0Ub-sj-PeZ"/>
+                            <constraint firstItem="GwP-ig-dMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="5ML-P6-SYt"/>
+                            <constraint firstItem="eUY-93-ocr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7JM-TN-Fif"/>
+                            <constraint firstItem="guV-7r-ZIT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IQ2-Pe-Sbe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Gl-hj-gQ2" secondAttribute="bottom" constant="44" id="K9z-vn-Y2s"/>
+                            <constraint firstItem="guV-7r-ZIT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="U39-Yo-jL6"/>
+                            <constraint firstItem="GwP-ig-dMg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="245.99999999999989" id="fRb-JV-sIR"/>
+                            <constraint firstItem="4Gl-hj-gQ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="uv3-bf-63r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="374.18478260869568"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="earth" width="491" height="491"/>
+        <image name="pikachu" width="256" height="256"/>
+    </resources>
 </document>
