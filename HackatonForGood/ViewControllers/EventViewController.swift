@@ -59,7 +59,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     throw JSONError.ConversionFailed
                 }
             print(json)
-            self.event.title = json["title"] as? String ?? "Title"
+            self.event.title = json["Title"] as? String ?? "Title"
             self.event.description = json["description"] as? String ?? "Description"
             print(self.event.title)
             
