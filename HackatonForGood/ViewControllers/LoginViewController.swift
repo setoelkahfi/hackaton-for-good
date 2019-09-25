@@ -31,6 +31,10 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func signUpButtonPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "showTabbarController", sender: self)
+
+        
     }
     
     @IBAction func signInButtonPressed(_ sender: Any) {

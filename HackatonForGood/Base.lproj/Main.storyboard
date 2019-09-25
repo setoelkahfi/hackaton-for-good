@@ -123,6 +123,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xu0-DZ-Nav"/>
                     <connections>
                         <outlet property="emailTextField" destination="PT0-Cq-aS1" id="vJC-hD-4fe"/>
                         <outlet property="loginView" destination="oSZ-6c-rsY" id="sFP-Xl-bsf"/>
@@ -130,11 +131,63 @@
                         <outlet property="signUpButton" destination="5OX-le-Jsn" id="ZYd-eK-sXg"/>
                         <outlet property="titleLabel" destination="4eO-Lk-LPl" id="9Se-g4-Idw"/>
                         <outlet property="usernameTextField" destination="ZhT-Um-ihv" id="Azy-53-zL1"/>
+                        <segue destination="Dam-gV-Ils" kind="presentation" identifier="showTabbarController" id="Ugc-Fm-pon"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+            <point key="canvasLocation" x="-1380" y="571"/>
+        </scene>
+        <!--Map Tab View Controller-->
+        <scene sceneID="UCq-lc-Sfu">
+            <objects>
+                <viewController id="Tui-Gm-VtF" userLabel="Map Tab View Controller" customClass="MapViewController" customModule="HackatonForGood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FNw-YB-A1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="biM-h9-nzS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Vu0-eu-UAU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dA0-b8-XXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541" y="571"/>
+        </scene>
+        <!--Event Tab View Controller-->
+        <scene sceneID="djs-Ue-qUw">
+            <objects>
+                <viewController id="JKg-ja-VVO" userLabel="Event Tab View Controller" customClass="EventViewController" customModule="HackatonForGood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="akP-1C-NZm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cf5-YN-wg1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="810-2g-XJY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nc9-dm-O0R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="1411"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jEi-vF-Omp">
+            <objects>
+                <tabBarController storyboardIdentifier="tabbarController" id="Dam-gV-Ils" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NFp-nM-jfC"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DhX-qj-orb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JKg-ja-VVO" kind="relationship" relationship="viewControllers" id="mwS-ps-64E"/>
+                        <segue destination="Tui-Gm-VtF" kind="relationship" relationship="viewControllers" id="M5q-id-Rxl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGj-dW-RGf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="571"/>
         </scene>
     </scenes>
     <resources>
