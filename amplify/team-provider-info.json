@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "hackatonforgood-dev-20190925110324-authRole",
+            "UnauthRoleArn": "arn:aws:iam::893652739480:role/hackatonforgood-dev-20190925110324-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::893652739480:role/hackatonforgood-dev-20190925110324-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "hackatonforgood-dev-20190925110324-deployment",
+            "UnauthRoleName": "hackatonforgood-dev-20190925110324-unauthRole",
+            "StackName": "hackatonforgood-dev-20190925110324",
+            "StackId": "arn:aws:cloudformation:eu-west-1:893652739480:stack/hackatonforgood-dev-20190925110324/54c15420-df73-11e9-8e46-0290e291f53e"
+        }
+    }
+}
