@@ -1,0 +1,6 @@
+framework module Pods_HackatonForGood {
+  umbrella header "Pods-HackatonForGood-umbrella.h"
+
+  export *
+  module * { export * }
+}

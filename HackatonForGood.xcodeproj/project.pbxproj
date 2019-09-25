@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3318BE1B05F18614201142ED /* Pods_HackatonForGoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691032F9546CEF074BEBA044 /* Pods_HackatonForGoodTests.framework */; };
 		8A45E5A1233B53C700EE191F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45E5A0233B53C700EE191F /* AppDelegate.swift */; };
 		8A45E5A3233B53C700EE191F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45E5A2233B53C700EE191F /* SceneDelegate.swift */; };
 		8A45E5A5233B53C700EE191F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45E5A4233B53C700EE191F /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		8A45E5AA233B53C900EE191F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A45E5A9233B53C900EE191F /* Assets.xcassets */; };
 		8A45E5AD233B53C900EE191F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A45E5AB233B53C900EE191F /* LaunchScreen.storyboard */; };
 		8A45E5B8233B53C900EE191F /* HackatonForGoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45E5B7233B53C900EE191F /* HackatonForGoodTests.swift */; };
+		D509DF3FA7629074EE557456 /* Pods_HackatonForGood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8588A719AE0280F306FB18 /* Pods_HackatonForGood.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A11E7D5301875189693589B /* Pods-HackatonForGood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonForGood.release.xcconfig"; path = "Target Support Files/Pods-HackatonForGood/Pods-HackatonForGood.release.xcconfig"; sourceTree = "<group>"; };
+		37A84CAE2EAF434025023178 /* Pods-HackatonForGoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonForGoodTests.release.xcconfig"; path = "Target Support Files/Pods-HackatonForGoodTests/Pods-HackatonForGoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		534A8CF7AAF9A89CA5F04645 /* Pods-HackatonForGoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonForGoodTests.debug.xcconfig"; path = "Target Support Files/Pods-HackatonForGoodTests/Pods-HackatonForGoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		691032F9546CEF074BEBA044 /* Pods_HackatonForGoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackatonForGoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A45E59D233B53C700EE191F /* HackatonForGood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonForGood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A45E5A0233B53C700EE191F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A45E5A2233B53C700EE191F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		8A45E5B3233B53C900EE191F /* HackatonForGoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackatonForGoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A45E5B7233B53C900EE191F /* HackatonForGoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackatonForGoodTests.swift; sourceTree = "<group>"; };
 		8A45E5B9233B53C900EE191F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1A60C58211FF84B86056C31 /* Pods-HackatonForGood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackatonForGood.debug.xcconfig"; path = "Target Support Files/Pods-HackatonForGood/Pods-HackatonForGood.debug.xcconfig"; sourceTree = "<group>"; };
+		EC8588A719AE0280F306FB18 /* Pods_HackatonForGood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackatonForGood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D509DF3FA7629074EE557456 /* Pods_HackatonForGood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3318BE1B05F18614201142ED /* Pods_HackatonForGoodTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				8A45E59F233B53C700EE191F /* HackatonForGood */,
 				8A45E5B6233B53C900EE191F /* HackatonForGoodTests */,
 				8A45E59E233B53C700EE191F /* Products */,
+				CD3F94454164A35153947D80 /* Pods */,
+				AE1033DE455ACC486051EAD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +111,27 @@
 			path = HackatonForGoodTests;
 			sourceTree = "<group>";
 		};
+		AE1033DE455ACC486051EAD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC8588A719AE0280F306FB18 /* Pods_HackatonForGood.framework */,
+				691032F9546CEF074BEBA044 /* Pods_HackatonForGoodTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD3F94454164A35153947D80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1A60C58211FF84B86056C31 /* Pods-HackatonForGood.debug.xcconfig */,
+				1A11E7D5301875189693589B /* Pods-HackatonForGood.release.xcconfig */,
+				534A8CF7AAF9A89CA5F04645 /* Pods-HackatonForGoodTests.debug.xcconfig */,
+				37A84CAE2EAF434025023178 /* Pods-HackatonForGoodTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +139,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A45E5BC233B53C900EE191F /* Build configuration list for PBXNativeTarget "HackatonForGood" */;
 			buildPhases = (
+				EDB71F1A749F1047E369AE5B /* [CP] Check Pods Manifest.lock */,
 				8A45E599233B53C700EE191F /* Sources */,
 				8A45E59A233B53C700EE191F /* Frameworks */,
 				8A45E59B233B53C700EE191F /* Resources */,
@@ -123,6 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A45E5BF233B53C900EE191F /* Build configuration list for PBXNativeTarget "HackatonForGoodTests" */;
 			buildPhases = (
+				C9391073623B100363FB14B1 /* [CP] Check Pods Manifest.lock */,
 				8A45E5AF233B53C900EE191F /* Sources */,
 				8A45E5B0233B53C900EE191F /* Frameworks */,
 				8A45E5B1233B53C900EE191F /* Resources */,
@@ -194,6 +229,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9391073623B100363FB14B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackatonForGoodTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDB71F1A749F1047E369AE5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackatonForGood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A45E599233B53C700EE191F /* Sources */ = {
@@ -360,6 +442,7 @@
 		};
 		8A45E5BD233B53C900EE191F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A60C58211FF84B86056C31 /* Pods-HackatonForGood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +460,7 @@
 		};
 		8A45E5BE233B53C900EE191F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A11E7D5301875189693589B /* Pods-HackatonForGood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +478,7 @@
 		};
 		8A45E5C0233B53C900EE191F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 534A8CF7AAF9A89CA5F04645 /* Pods-HackatonForGoodTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +500,7 @@
 		};
 		8A45E5C1233B53C900EE191F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A84CAE2EAF434025023178 /* Pods-HackatonForGoodTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
