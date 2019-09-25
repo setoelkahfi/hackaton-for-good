@@ -34,8 +34,8 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     private func reloadData() {
         let parameterDictionary: [String : Any] = [
-            "title" : "This is title",
-            "description" : "This is description",
+            "title" : "Event: Server cleanup!",
+            "description" : "Let’s clean the server beach this Sunday morning and prepare it for the sunny summer!",
             "going": true
         ]
         
@@ -61,6 +61,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
             print(json)
             self.event.title = json["Title"] as? String ?? "Title"
             self.event.description = json["description"] as? String ?? "Description"
+            self.event.going = json["going"] as? Bool ?? false
             print(self.event.title)
             
             DispatchQueue.main.async {
@@ -89,7 +90,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.title.text = self.event.title
         cell.descriptionLabel.text = self.event.description
         cell.joinButton.backgroundColor = self.event.going ? UIColor.black : UIColor.red
-                
+        cell.joinButton.titleLabel?.text = self.event.going ? "I'M GOING!" : "Join"
         return cell
     }
     
